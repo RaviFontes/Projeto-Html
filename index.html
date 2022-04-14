@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exervicio para casa Senai</title>
+    <style>
+        .cabecalho{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .cabecalho-img{
+            max-width: 250px;
+        }
+        .cabecalho-menu{
+            display: flex;
+            gap: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header class="cabecalho">
+        <img class="cabecalho-img" src="imagens/github.jpeg" alt="Octacats_Collabocats">
+        <nav class="cabecalho-menu">
+            <a href="index.html">Comandos do GitHub</a>
+            <a href="printDoVscode.html">Print Vscode</a>
+            <a href="printDoVsCodeSubindoArq.html">Subindo Arquivo</a>
+            <a href="estruturaRaizDoProjeto.html">Projeto</a>
+            <a href="imagemDoRepositorioRemot.html">Repositório Remoto</a>
+        </nav>
+    </header>
+
+        <main>
+            <section class="conteudo-principal">
+                <h1>Comandos GitHub (Básicos)</h1>
+                <ol>
+                    <li><strong>Para acessar a pasta do repositório local. </strong></li>
+                        cd + Nome da pasta 
+                    <li><strong>Setar Usuário</strong></li>
+                        git config --global user.name "Nome do Usuário"
+                    <li><strong>setar E-mail</strong></li>
+                        git config --global user.email "digite seu e-mail"
+                    <li><strong>Criando um repositório</strong></li>
+                        git init 
+                    <li><strong>Verificar status</strong></li>    
+                        git status
+                    <li><strong>Adicionar todos os arquivos/ diretórios</strong></li>
+                        git add . 
+                    <li><strong>Comitar um arquivos</strong></li>
+                        git commit -m "Comentário ex. Atualizaçao..."
+                    <li><strong>Informar a pasta remota do github</strong></li>
+                        git remote add origin http:// (nesse momento copie e cole o endereço do github).
+                    <li><strong>Publicar as atualizações no repositório remoto</strong></li>
+                        git push -u origin master
+                    <li><strong>Criando um novo bransh</strong></li>
+                        git branch bug-123 
+                    <li><strong>Criando um novo bransh</strong></li>
+                        git checkout -b bug-456 
+                    <li><strong>Baixar as alterações no repositório remoto</strong></li>
+                        git pull
+                    <br>
+                </ol>
+            </section> 
+        </main>
+
+       
+
+
+    
+</body>
+</html>
